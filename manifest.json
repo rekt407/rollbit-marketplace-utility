@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "ROLLBOTS MARKETPLACE UTILITY",
+  "version": "1.0",
+  "description": "Appends extra information to Rollbots & Sportsbots on Rollbit Marketplace.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.rollbit.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
