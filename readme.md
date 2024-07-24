@@ -6,6 +6,9 @@ Developed by REKT
 
 This Chrome extension enhances the Rollbit.com marketplace by appending additional information to relevant elements on the page, specifically for Rollbots and Sportsbot. If you like my work, please consider tipping REKT on Rollbit.
 
+![Rollbots Marketplace Utility](https://rekt.it/rlb/rollbots.png)
+![Sportsbot Marketplace Utility](https://rekt.it/rlb/sportsbots.png)
+
 ## Features
 
 - Displays custom data for Sports Rollbots and Rollbots on the marketplace.
