@@ -100,7 +100,13 @@ function appendData() {
               }
 
               // Calculate values
-              const seventhSpanValue = parseFloat(spans[6].textContent.replace('K', '000'));
+              let seventhSpanValue;
+              if (spans[6].textContent.includes('K')) {
+                seventhSpanValue = parseFloat(spans[6].textContent.replace('K', '000'));
+              } else if (spans[6].textContent.includes('M')) {
+                seventhSpanValue = parseFloat(spans[6].textContent.replace('M', '000000'));
+              }
+
               const pricePer100k = (listedPrice / seventhSpanValue) * 100000;
 
               // Create span to display value
