@@ -29,6 +29,9 @@ function appendData() {
       if (listedPriceText.includes('K')) {
           listedPriceText = listedPriceText.replace('K', '');
           listedPrice = parseFloat(listedPriceText) * 1000;
+      } else if (listedPriceText.includes('M')) {
+          listedPriceText = listedPriceText.replace('M', '');
+          listedPrice = parseFloat(listedPriceText) * 1000000;
       }
 
       // Check if element contains relevant text
@@ -47,7 +50,7 @@ function appendData() {
               const spy = parseFloat(spans[0].textContent.replace('$', '').replace(',', '.')) * 12;
               const fby = parseFloat(spans[2].textContent.replace('$', '')) * 6;
               const rpy = spy + fby
-              const roi = ((rpy) / listedPrice) * 100;
+              const roi = (rpy / listedPrice) * 100;
 
               // Create spans to display values
               const spySpan = document.createElement('span');
