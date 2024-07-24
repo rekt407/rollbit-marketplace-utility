@@ -26,8 +26,6 @@ git clone https://github.com/rekt407/rollbit-marketplace-utility.git
 ```
 Or download the ZIP file and extract it.
 
-Or download the ZIP file and extract it.
-
 ### Step 2: Open Chrome Extensions Page
 
 1. Open Google Chrome.
